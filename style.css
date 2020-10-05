@@ -1,0 +1,119 @@
+/* Reglas - sintaxis:                 
+     selector {
+       propiedad: 'valor';
+       propiedad2: 'valor;
+     } 
+  */
+
+  /* Selectores en css
+   */
+
+  /* Universal*/
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+  }
+
+   /* 1- Tag */
+  h1 {
+    color: rgb(216, 125, 40);
+    background-color: black;
+    text-align: center;
+  }
+
+   /* 2- id se representa con # (debe ser unico)*/
+
+   #CamzSection {
+    background-color: rgb(192, 11, 41);
+    color: rgb(244, 244, 244);
+  }
+
+   #fedeSection {
+    background-color: rgb(22, 219, 233);
+  }
+
+   /* 2- class se representa con .*/
+
+   .styleArticle {
+    width: 50%;
+  }
+
+   /*3- por hijos y se representa conn un > */
+
+   /* .styleArticle > img {
+    width: 100%;
+  } */
+  .styleArticle img {
+    width: 100%;
+  }
+
+   /* 4- Hermanano adyacente  se representa con un +  h2 + p{} 
+  <h2>
+  <p>
+  */
+
+   /* 5- hermano general  se representa con ~     h2 * p{}
+  h2 
+  p
+  */
+
+   /* Selectores avanzados 
+  first- child
+  last-child
+  only-child
+  */
+
+   nav {
+    background-color: rgb(56, 6, 56);
+  }
+
+   nav ul li {
+    font-size: 20px;
+    color: black;
+  }
+
+   li {
+    color: gray;
+  }
+
+   /* Pseudo-clases*/
+
+   nav ul li:hover {
+    color: aliceblue;
+  }
+  .wrapper-flex {
+    background-color: cadetblue;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+   .square {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    text-align: center;
+  }
+
+   .square4 {
+    align-self: baseline;
+  }
+
+   .article-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+   @media only screen and (min-width: 1024px) {
+    .article-flex {
+      flex-direction: row;
+    }
+    .styleArticle img {
+      width: 70%;
+    }
+  } 
