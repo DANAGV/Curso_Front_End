@@ -1,46 +1,30 @@
-//!FUNCIONES
-//**como se declaran las funciones */
-/*function("hola")
-function nameFuncion(atributos){
-    //*codigo de la funcion
-}
+//* sintaxis : array.forEach(callback(nameItem,index)){}
+let numbersArray = [1,2,3,4,5]
+numbersArray.forEach((number,index)=> {
+    console.log(`${number * number} y mi index es ${index}`)
+})
 
-//*arrow funtions
-    //menos codigo
-    //la referencia THIS
-const nameFuncion = () =>{
-    //*todo el codigo de esta funcion
-}
-*/
+let numbersArrayMap = numbersArray.map((number)
+=> number * number)
+console.log(numbersArray)
 
-//*FUNCION COOLBACK
-function sayHello(greet = () =>{
-    console.log('Hello')
-}){
-    let hello = true
-    hello ? greet() : null
-}
-sayHello() //llamar la funcion para que se muestre
+let numbersArrayFilter = numbersArrayMap.filter((number)=>number>=10)
+console.log(numbersArrayFilter)
 
-//operaciones
-function suma(num,num2){
-    return num + num2
-}
-console.log(suma(2,2))
+//reduce recibe funcion callback y valor inicial
+let numbersArrayReduce = numbersArray.reduce((acum,number,index)=> {
+    acum = acum + number
+    return acum} , 0)
+    console.log(numbersArrayReduce)
 
-//*arrow funtions
-//cuando no se pone parentesis no se ejecuta la funcion sino hace referencia a ella
-//sin parentesis muestra toda la funcion
-//con parentesis muestra el resultadp de la operacion
-const sum1 = (num,num2) => num + num2
-console.log(sum1(3,3))
+    //funcion simplificada
+    let numbersArrayReduce = numbersArray.reduce((acum,number) => acum +=number,0)
+    console.log(numbersArrayReduce)
 
-const printValue = value => console.log(value)
-printValue('Hola a todos')
-
-//si es mas de una instruccion son necesario las llaves
-const printValue2 = value => {
-    value = value.toUpperCase()
-    console.log(value)
-}
-printValue2('Hola a Todos')
+//+++++++++++++++++++++++++++++++++++++++
+//OBTENER EL PROMEDIO PROMEDIO
+let promedio = numbersArrayMap.reduce((acum,number,index,arr)
+=> acum+=number/arr.length,0)
+console.log(promedio)
+//segunda opcion
+let numbersArrayReduce =( numbersArrayMap.reduce((acum, number) => acum += number ,0))/ numbersArrayMap.length
