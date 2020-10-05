@@ -2,44 +2,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<!--los metadatos es información para el navegador-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0", initial-scale=1.0 />
-    <meta name="keywoeds" content="curso-web, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", initial-scale=1.0>
+    <meta name="keywoeds" content="curso-web, html">
 
     <title>Curso html</title>
 </head>
 <body>
     <h1>Encabezado principal</h1>
+    <h2>subtitulo</h2>
     <h6>ultimo encabezado</h6>
-    <p>
-        Este es un parrafo<br/>
+    <p>Este es un parrafo<br/>
         <b>Hola</b>
         <i>primer curso</i>
         <span>parte del parrafo que quiero resaltar </span>
     </p>
-    <h2>Listas: </h2>
-    <h3>ordenadas</h3>
+    <h2>LISTAS: </h2>
+    <h3>Listas Ordenadas</h3>
     <ol>
-        <li>
-            elemento 1
-        </li>
-        <li>
-            elemento 2
-        </li>
+        <li>elemento 1</li>
+        <li>elemento 2</li>
     </ol>
-    
-    <h3>Desordenada</h3>
+    <h3>Listas Desordenada</h3>
     <ul>
         <li> elemento 1</li>
         <li> elemento 2</li>
         <li> elemento 3</li>
     </ul>
    
-    <h3>Definicion</h3>
+    <h3>Listas de Definicion</h3>
 
     <dl>
-        <dt>termino</dt>
-        <dd>definicion</dd>
+        <dt>Termino</dt>
+        <dd>Definicion</dd>
     </dl>
     
     <h2>Enlaces o hipervinculos</h2>
@@ -47,11 +43,12 @@
     title="a-google">google</a>
     <a href="#">Home</a>
     <a href="#id"></a>
+    <!--Para direccionarnos a una seccion se necesita poner en href="#[id del elemento]"-->
 
-    <h2>imagenes</h2>
+    <h2>Imagenes</h2>
     <img 
         src="https://www.pngfind.com/mpng/iTbJbbi_camila-cabello-images-in-collection-page-png-pack/"
-        alt="imagen Camz"
+        alt="Imagen de Camz"
     />"
 
     <!-- <video src="path/url">
@@ -68,6 +65,7 @@
             <td>Columna 2 - fila 2</td>
         </tr>
     </table>
+
     <h3>Formularios</h3>
     <form action="">
         <fieldset><legend>Datos de usuario</legend>
@@ -84,10 +82,11 @@
             <button>Enviar</button>
         </fieldset>
     </form>
+
     <!--Estructura semantica-->
     <header>El encabezado de una pagina</header>
     <!--Menu-->
-    <nav>
+    <nav> <!--Se utiliza para los menus o tambien a agrupar, "es un navegador" puede tener otras funciones-->
         <ul>
             <li>
                 Elemento 1
@@ -95,10 +94,11 @@
         </ul>
     </nav>
 
-<!--Agrupar contenidos relacionados entre si-->
+<!--Agrupar contenidos o elementos relacionados entre si-->
     <section>
         <h1>Seccion de musica</h1>
-<!--Mantener organizado-->
+
+<!--Mantener organizado elementos que no necesariamente estan relacionados-->
         <article>
             <h1>Encabezado 1</h1>
         </article>
@@ -106,12 +106,20 @@
             <h2>Encabezado 2</h2>
         </article>
     </section>
-    
+
+ <!--Publicidad o información extra que no necesariamente se relaciona con la página-->   
     <aside>Informacion complementaria</aside>
+
+<!--Reserva derechos de autos-->
     <footer>copyrigth &copy;</footer>
     <main>
         Resalta la parte principal de la pagina
     </main>
     <nav>agrupar</nav>
- </body>
+    <dl>
+        <dt>div</dt>
+            <dd>Sirve para seccionar pero tambien para dar formato con CSS</dd>
+
+    </dl>
+</body>
 </html>
