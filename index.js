@@ -1,30 +1,14 @@
-//* sintaxis : array.forEach(callback(nameItem,index)){}
-let numbersArray = [1,2,3,4,5]
-numbersArray.forEach((number,index)=> {
-    console.log(`${number * number} y mi index es ${index}`)
-})
+//*ejercicio
+/*Dada una matriz de números enteros, encuentre el par de elementos adyacentes que tenga el producto más grande y devuelva ese producto.
+Ejemplo
+Para inputArray = [3, 6, -2, -5, 7, 3], la salida debe ser
+adyacenteElementosProducto (inputArray) = 21.
+7 y 3 producen el producto más grande.*/
 
-let numbersArrayMap = numbersArray.map((number)
-=> number * number)
-console.log(numbersArray)
-
-let numbersArrayFilter = numbersArrayMap.filter((number)=>number>=10)
-console.log(numbersArrayFilter)
-
-//reduce recibe funcion callback y valor inicial
-let numbersArrayReduce = numbersArray.reduce((acum,number,index)=> {
-    acum = acum + number
-    return acum} , 0)
-    console.log(numbersArrayReduce)
-
-    //funcion simplificada
-    let numbersArrayReduce = numbersArray.reduce((acum,number) => acum +=number,0)
-    console.log(numbersArrayReduce)
-
-//+++++++++++++++++++++++++++++++++++++++
-//OBTENER EL PROMEDIO PROMEDIO
-let promedio = numbersArrayMap.reduce((acum,number,index,arr)
-=> acum+=number/arr.length,0)
-console.log(promedio)
-//segunda opcion
-let numbersArrayReduce =( numbersArrayMap.reduce((acum, number) => acum += number ,0))/ numbersArrayMap.length
+let array5 = [9, 5, 10, 2, 24, -1, -48]
+let resul = array5.map((number,index)=> {
+    //condicion?  lo que hara SI se cumple  :lo que se hara si NO se cumple (operador ternario)
+    return (array5[index+1]!=undefined)? number * array5[index + 1] :0  
+    })
+resul.sort((a,b)=>b-a)
+console.log(resul[0])
