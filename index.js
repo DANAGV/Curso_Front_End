@@ -236,13 +236,6 @@ var x = [
   })
   console.log($object);
 
-
-
-
-
-
-
-
   let sortByDate = (values) => { 
     let arr = []//se convierte en array
 
@@ -282,3 +275,4 @@ let filter4Popularity = (values) => {
     arr.push(object)
 return arr
 }
+
