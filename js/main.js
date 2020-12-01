@@ -37,7 +37,7 @@ function loadDoc (){
         //*2 verificar state y status
         if (this.readyState === 4 && this.status === 200){
             //console.log(this.responseText) //regresa un string
-            const response = JSON.parse(this.responseText).results
+            const response = JSON.parse(this.responseText).results //se convierte en json
             console.log(response)
             //*Las funciones que queremos que se ejecuten
             // ToDo: printData()
