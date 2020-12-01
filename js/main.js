@@ -1,24 +1,24 @@
 'use strict'
 
-const form = document.querySelector('#form')
-const boxDashed = document.querySelector('#use-container')
+/*
+    1.- GET  -> obtener datos de una API
+    2.- POST -> enviar informacion
+    3.- PUT -> Reemplazar toda la entrada completa
+    4.- PATH -> Reemplazar 
+    5.- DELETE -> Borrar
 
-boxDashed.style.display = 'none'
-form.addEventListener('submit', (event)=>{
-    //const name = document.querySelector('#name')
-    event.preventDefault()
-    const name = document.querySelector('#name').value
-    const lastName = document.querySelector('#lastName').value
-    const age = document.querySelector('#age').value
-    //console.log(name, lastName, age)
+    CRUD -> las maneras en las que se puede operar sobre la infromacion almacenada
+    
+    CREATE -> POST
+    READ -> GET
+    UPDATE -> PUT Y PATH
+    DALETE -> DELETE
+    
+    ? HADER -> proporciona la información
+    ? BODY-> la informacion que se envia
 
-    boxDashed.style.display = 'block'
-    const paragraphName = document.querySelector('pName spam')
-    const paragraphLastName = document.querySelector('pLastName spam')
-    const paragraphAge = document.querySelector('pAge spam')
+    AJAX 
+    Nos permite enviar y recibir datos a un servidor
+    Objeto incorpado en el navegador XML
 
-    paragraphName.innerHTML = name
-    paragraphLastName.innerHTML = lastName
-    paragraphAge.innerHTML = age
-
-})
+*/
