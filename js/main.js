@@ -16,16 +16,17 @@
 const printData = response =>{
     const wrapper = document.createElement('article')
     const name = document.createElement('h1')
-    const image = document.createElement('img')
-    const id = document.createElement('p')
+    const id = document.createElement('id')
+    const form_name = document.createElement('form_name')
 
-    name.innerHTML = response.name //iner agragar contenido a la etiqueta
     id.innerHTML = response.id
-    image.setAttribute('src',response.image) //( atributo,  nombre)
+    name.innerHTML = response.name //iner agragar contenido a la etiqueta
+    form_name.innerHTML = response.form_name
     
-    wrapper.appendChild(name) //wrapper->guarda el article
     wrapper.appendChild(id)
-    wrapper.appendChild(image) //append->agrega el hijo
+    wrapper.appendChild(name)
+    wrapper.appendChild(form_name)
+    
     const container = document.getElementById('container') //accede al container
     container.appendChild(wrapper)
 }
@@ -48,7 +49,7 @@ function loadDoc (){
     }
     //* 3 configurar la peticion
     //1-metodo (verbo), 2-url, 3-asincrono
-    xhttp.open('GET','https://rickandmortyapi.com/api/character/',true)
+    xhttp.open('GET','https://pokeapi.co/api/v2/pokemon-form/',true)
     //*4
     xhttp.send()
 }
